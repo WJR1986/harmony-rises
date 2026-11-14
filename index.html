@@ -1,251 +1,741 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Harmony Rises Counselling | Safe Space for Healing & Growth</title>
-  <meta name="description" content="Harmony Rises Counselling offers compassionate support for adults and children (ages 5-13). Specializing in anxiety, bullying, self-esteem, and spiritual guidance.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>
+      Counselling in Amble, Northumberland | Harmony Rises Counselling
+    </title>
 
-  <!-- Tailwind + Google Fonts -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-  
-  <!-- smooth behaviour and minor custom overrides -->
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif;
-    }
-    /* focus-visible accessibility */
-    a:focus-visible, button:focus-visible {
-      outline: 2px solid #2c7a7b;
-      outline-offset: 2px;
-      border-radius: 9999px;
-    }
-    /* better image rendering */
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-    /* custom transition for buttons */
-    .btn-transition {
-      transition: all 0.2s ease-in-out;
-    }
-    .hover-lift:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.2);
-    }
-  </style>
-</head>
-<body class="bg-[#f9fbfb] text-gray-800 antialiased">
+    <meta
+      name="description"
+      content="Professional counselling in Amble, Northumberland. Supporting adults and children with anxiety, self-esteem, and emotional wellbeing. In-person and online sessions available across the UK."
+    />
+    <!-- Tailwind + Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- HERO SECTION - fully responsive, no overflow, improved padding -->
-  <section class="relative min-h-[100dvh] flex items-center text-white overflow-hidden">
-    <!-- Background Image with optimized object-fit (removed scale-105 to avoid overflow) -->
-    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773"
-         alt="Calm therapy space with warm natural light"
-         class="absolute inset-0 w-full h-full object-cover object-center"
-         loading="eager" />
-    
-    <!-- Enhanced gradient overlay for readability across devices -->
-    <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/30"></div>
-    
-    <!-- Content container with flexible inner spacing -->
-    <div class="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-12">
-      <div class="max-w-xl lg:max-w-2xl text-left">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight mb-5 drop-shadow-sm">
-          Harmony Rises Counselling
-        </h1>
-        <p class="text-base sm:text-lg md:text-xl text-gray-100/95 mb-8 leading-relaxed max-w-lg">
-          A safe space to heal, grow, and move forward at your own pace.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 sm:gap-5">
-          <a href="#contact"
-             class="bg-white text-gray-900 px-7 py-3.5 rounded-full font-semibold text-center shadow-md hover:shadow-lg transition-all duration-200 hover:scale-[1.02] btn-transparent focus:ring-2 focus:ring-white/50">
-            Get in Touch
-          </a>
-          <a href="#aim"
-             class="backdrop-blur-sm bg-white/10 border border-white/30 px-7 py-3.5 rounded-full font-medium text-center hover:bg-white/20 transition-all duration-200">
-            Learn More
-          </a>
+    <!-- smooth behaviour and minor custom overrides -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family:
+          "Inter",
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          Helvetica,
+          sans-serif;
+      }
+      /* focus-visible accessibility */
+      a:focus-visible,
+      button:focus-visible {
+        outline: 2px solid #2c7a7b;
+        outline-offset: 2px;
+        border-radius: 9999px;
+      }
+      /* better image rendering */
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      /* custom transition for buttons */
+      .btn-transition {
+        transition: all 0.2s ease-in-out;
+      }
+      .hover-lift:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Counseling",
+        "name": "Harmony Rises Counselling",
+        "image": "https://yourdomain.co.uk/images/hero.jpg",
+        "url": "https://yourdomain.co.uk",
+        "telephone": "+447754617135",
+        "email": "Harmony.rises.counselling@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dilston Terrace",
+          "addressLocality": "Amble",
+          "addressRegion": "Northumberland",
+          "postalCode": "NE65",
+          "addressCountry": "GB"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United Kingdom"
+        },
+        "serviceType": [
+          "Counselling",
+          "Online Counselling",
+          "Child Counselling",
+          "Anxiety Support"
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-[#f9fbfb] text-gray-800 antialiased">
+    <nav class="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm" aria-label="Main navigation">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-4 flex flex-wrap items-center justify-between gap-3">
+        <a href="index.html" class="font-semibold text-gray-900">Harmony Rises Counselling</a>
+        <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
+          <a href="index.html#aim" class="text-gray-700 hover:text-teal-700">My Approach</a>
+          <a href="index.html#contact" class="text-gray-700 hover:text-teal-700">Contact</a>
+          <a href="deals.html" class="font-semibold text-teal-800 hover:text-teal-600">Deals</a>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- AIM SECTION - improved padding & responsiveness + proper list styling -->
-  <section id="aim" class="py-14 md:py-24 px-5 sm:px-8">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-      <!-- Text column -->
-      <div class="order-2 md:order-1">
-        <span class="text-teal-700 font-semibold text-sm uppercase tracking-wide mb-2 block">My approach</span>
-        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-5 leading-tight">My Aim</h2>
-        <p class="text-gray-700 text-base sm:text-lg leading-relaxed mb-5">
-          I support both adults and children (ages 5–13) through a wide range of emotional and life challenges — always with compassion, patience, and evidence-informed guidance.
-        </p>
-        
-        <ul class="space-y-2.5 text-gray-700 mb-6">
-          <li class="flex items-start gap-2"><span class="text-teal-600 text-lg">•</span> Bullying (school or workplace)</li>
-          <li class="flex items-start gap-2"><span class="text-teal-600 text-lg">•</span> Low confidence &amp; self-esteem</li>
-          <li class="flex items-start gap-2"><span class="text-teal-600 text-lg">•</span> Anxiety &amp; depression</li>
-          <li class="flex items-start gap-2"><span class="text-teal-600 text-lg">•</span> Addictive behaviours &amp; emotional regulation</li>
-        </ul>
-        
-        <div class="bg-teal-50/60 p-5 rounded-2xl border-l-4 border-teal-500 mt-4">
-          <p class="italic text-gray-700 leading-relaxed">
-            “I bring both personal insight and professional understanding, helping create a safe, supportive, and non-judgmental space for every person I work with.”
+    <!-- HERO SECTION - fully responsive, no overflow, improved padding -->
+<section
+      class="relative min-h-[100dvh] flex items-center text-white overflow-hidden"
+    >
+<img
+  src="/images/image7.jpeg"
+  alt="Calm therapy space with warm natural light"
+  class="absolute inset-0 w-full h-full object-cover object-center md:object-top"
+  loading="eager"
+/>
+
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/30"
+      ></div>
+
+      <div
+        class="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-12"
+      >
+        <div class="max-w-xl lg:max-w-2xl text-left">
+          
+<!-- <div class="mb-6 sm:mb-8">
+            <img 
+              src="images/logo.png" 
+              alt="Harmony Rises Counselling Logo" 
+              class="h-24 w-auto sm:h-32 md:h-40 lg:h-44 object-contain opacity-95 filter drop-shadow-sm"
+            />
+          </div> -->
+
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight mb-5 drop-shadow-sm"
+          >
+            Harmony Rises Counselling
+          </h1>
+          <p class="text-gray-100/90 mb-6 max-w-lg">
+            Based in Amble, Northumberland, I offer in-person counselling as
+            well as online sessions across the UK.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 sm:gap-5">
+            <a
+              href="#contact"
+              class="bg-white text-gray-900 px-7 py-3.5 rounded-full font-semibold text-center shadow-md hover:shadow-lg transition-all duration-200 hover:scale-[1.02] focus:ring-2 focus:ring-white/50"
+            >
+              Get in Touch
+            </a>
+            <a
+              href="#aim"
+              class="backdrop-blur-sm bg-white/10 border border-white/30 px-7 py-3.5 rounded-full font-medium text-center hover:bg-white/20 transition-all duration-200"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <!-- ABOUT -->
+    <section class="py-16 md:py-24 px-5 sm:px-8 bg-white">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <!-- IMAGE -->
+        <div>
+<img
+  src="/images/image8.svg"
+  alt="Counsellor speaking with a client in a calm, supportive setting"
+  class="rounded-2xl shadow-xl w-full object-cover"
+/>
+        </div>
+
+        <!-- TEXT -->
+        <div>
+          <span
+            class="text-teal-700 font-semibold text-sm uppercase tracking-wide"
+          >
+            About Hayley
+          </span>
+
+          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-5">
+            A compassionate, person-centred approach
+          </h2>
+
+          <p class="text-gray-700 mb-4 leading-relaxed">
+            Hi, I’m Hayley, the heart behind Harmony Rises Counselling.
+          </p>
+
+          <p class="text-gray-700 mb-4 leading-relaxed">
+            I offer a safe, supportive space where you can come exactly as you
+            are—without judgement, pressure, or expectation. I understand that
+            reaching out for support isn’t always easy, and I deeply respect the
+            courage it takes to begin this journey.
+          </p>
+
+          <p class="text-gray-700 mb-4 leading-relaxed">
+            My approach is compassionate, down-to-earth, and centred around you.
+            I work from a person-centred, humanistic perspective, meaning I
+            believe you are the expert of your own life.
+          </p>
+
+          <p class="text-gray-700 mb-4 leading-relaxed">
+            I also work integratively, drawing from approaches such as
+            psychodynamic therapy and Cognitive Behavioural Therapy (CBT),
+            adapting our sessions to suit your individual needs.
+          </p>
+
+          <p class="text-gray-700 leading-relaxed">
+            Whether you're navigating anxiety, low mood, past experiences,
+            self-worth, or simply feeling stuck, you don’t have to face it
+            alone. I’m here to walk alongside you at your own pace.
+          </p>
+
+          <!-- SUPPORT TAG -->
+          <div class="mt-6 bg-teal-50 p-4 rounded-xl text-sm text-teal-900">
+            Supporting both adults and children (ages 5–13)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AIM SECTION - improved padding & responsiveness + proper list styling -->
+    <section id="aim" class="py-14 md:py-24 px-5 sm:px-8">
+      <div
+        class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-16 items-center"
+      >
+        <!-- Text column -->
+        <div class="order-2 md:order-1">
+          <span
+            class="text-teal-700 font-semibold text-sm uppercase tracking-wide mb-2 block"
+            >My approach</span
+          >
+          <h2
+            class="text-3xl sm:text-4xl font-bold text-gray-900 mb-5 leading-tight"
+          >
+            My Aim
+          </h2>
+          <p class="text-gray-700 text-base sm:text-lg leading-relaxed mb-5">
+            I support both adults and children (ages 5–13) through a wide range
+            of emotional and life challenges — always with compassion, patience,
+            and evidence-informed guidance.
+          </p>
+
+          <ul class="space-y-2.5 text-gray-700 mb-6">
+            <li class="flex items-start gap-2">
+              <span class="text-teal-600 text-lg">•</span> Bullying (school or
+              workplace)
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-teal-600 text-lg">•</span> Low confidence &amp;
+              self-esteem
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-teal-600 text-lg">•</span> Anxiety &amp;
+              depression
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-teal-600 text-lg">•</span> Addictive behaviours
+              &amp; emotional regulation
+            </li>
+          </ul>
+
+          <div
+            class="bg-teal-50/60 p-5 rounded-2xl border-l-4 border-teal-500 mt-4"
+          >
+            <p class="italic text-gray-700 leading-relaxed">
+              “I bring both personal insight and professional understanding,
+              helping create a safe, supportive, and non-judgmental space for
+              every person I work with.”
+            </p>
+          </div>
+        </div>
+
+        <!-- Image column - fully responsive, no overflow -->
+        <div class="order-1 md:order-2">
+          <img
+            src="/images/image9.svg"
+            alt="Therapist speaking with a client in a warm, sunlit room"
+            class="rounded-2xl shadow-xl w-full object-cover h-auto transition-transform duration-300 hover:shadow-2xl"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- PEER MENTORING SECTION - improved spacing, border radius & responsive -->
+    <section class="bg-white py-14 md:py-24 px-5 sm:px-8">
+      <div
+        class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-16 items-center"
+      >
+        <div class="order-1 md:order-1">
+          <img
+            src="/images/image10.jpeg "
+            alt="Two people sharing a mentoring session in a supportive environment"
+            class="rounded-2xl shadow-xl w-full object-cover h-auto transition-all duration-300 hover:shadow-2xl"
+            loading="lazy"
+          />
+        </div>
+        <div class="order-2 md:order-2">
+          <span
+            class="text-indigo-600 font-semibold text-sm uppercase tracking-wide"
+            >Peer support</span
+          >
+          <h2
+            class="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-5 leading-tight"
+          >
+            Peer Mentoring
+          </h2>
+          <p class="text-gray-700 text-base sm:text-lg mb-4 leading-relaxed">
+            Together we will explore where you are now, set meaningful goals,
+            and create a clear path forward. You don’t have to figure it out
+            alone — I walk alongside you, celebrating each small win.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            I can also guide you towards the right support services when needed,
+            ensuring you are never navigating things alone. This is a
+            partnership rooted in respect, honesty, and gentle accountability.
           </p>
         </div>
       </div>
-      
-      <!-- Image column - fully responsive, no overflow -->
-      <div class="order-1 md:order-2">
-        <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88"
-             alt="Therapist speaking with a client in a warm, sunlit room"
-             class="rounded-2xl shadow-xl w-full object-cover h-auto transition-transform duration-300 hover:shadow-2xl"
-             loading="lazy" />
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PEER MENTORING SECTION - improved spacing, border radius & responsive -->
-  <section class="bg-white py-14 md:py-24 px-5 sm:px-8">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-      <div class="order-1 md:order-1">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
-             alt="Two people sharing a mentoring session in a supportive environment"
-             class="rounded-2xl shadow-xl w-full object-cover h-auto transition-all duration-300 hover:shadow-2xl"
-             loading="lazy" />
-      </div>
-      <div class="order-2 md:order-2">
-        <span class="text-indigo-600 font-semibold text-sm uppercase tracking-wide">Peer support</span>
-        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-5 leading-tight">Peer Mentoring</h2>
-        <p class="text-gray-700 text-base sm:text-lg mb-4 leading-relaxed">
-          Together we will explore where you are now, set meaningful goals, and create a clear path forward. You don’t have to figure it out alone — I walk alongside you, celebrating each small win.
-        </p>
-        <p class="text-gray-700 leading-relaxed">
-          I can also guide you towards the right support services when needed, ensuring you are never navigating things alone. This is a partnership rooted in respect, honesty, and gentle accountability.
+    <!-- SPIRITUAL SUPPORT SECTION - centered elegant & responsive breathing room -->
+    <section
+      class="py-16 md:py-28 px-5 sm:px-8 bg-gradient-to-br from-[#eef6f6] to-[#e2efef] text-center"
+    >
+      <div class="max-w-4xl mx-auto">
+        <div
+          class="inline-flex items-center justify-center p-2 bg-white/60 rounded-full px-5 mb-5 backdrop-blur-sm"
+        >
+          <span class="text-sm font-medium text-teal-800"
+            >✨ holistic wellness</span
+          >
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">
+          Spiritual Support
+        </h2>
+        <p class="text-gray-700 text-lg max-w-2xl mx-auto leading-relaxed">
+          For those who feel drawn to it, I offer spiritual guidance and gentle
+          card readings as a sacred way to reflect, gain insight, and find
+          clarity — always honoring your beliefs and boundaries.
         </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SPIRITUAL SUPPORT SECTION - centered elegant & responsive breathing room -->
-  <section class="py-16 md:py-28 px-5 sm:px-8 bg-gradient-to-br from-[#eef6f6] to-[#e2efef] text-center">
-    <div class="max-w-4xl mx-auto">
-      <div class="inline-flex items-center justify-center p-2 bg-white/60 rounded-full px-5 mb-5 backdrop-blur-sm">
-        <span class="text-sm font-medium text-teal-800">✨ holistic wellness</span>
-      </div>
-      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">Spiritual Support</h2>
-      <p class="text-gray-700 text-lg max-w-2xl mx-auto leading-relaxed">
-        For those who feel drawn to it, I offer spiritual guidance and gentle card readings as a sacred way to reflect, gain insight, and find clarity — always honoring your beliefs and boundaries.
+    <!-- QUOTE SECTION - breathing & typographic refinement -->
+<section class="py-16 md:py-24 px-5 sm:px-8 bg-[#f9fbfb]">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+    <div>
+      <img
+        src="/images/image7.jpeg"        alt="Hayley, counsellor at Harmony Rises"
+        class="rounded-2xl shadow-xl w-full object-cover"
+      />
+    </div>
+
+    <div>
+      <span class="text-teal-700 font-semibold text-sm uppercase tracking-wide">
+        Meet your counsellor
+      </span>
+
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-5">
+        Warm, human, and here to listen
+      </h2>
+
+      <p class="text-gray-700 leading-relaxed mb-4">
+        I’m Hayley, and I created Harmony Rises Counselling to offer a calm,
+        supportive space where you can feel safe to talk openly.
+      </p>
+
+      <p class="text-gray-700 leading-relaxed">
+        You won’t be judged, rushed, or “fixed” — just heard, understood, and supported at your pace.
       </p>
     </div>
-  </section>
 
-  <!-- QUOTE SECTION - breathing & typographic refinement -->
-  <section class="py-16 md:py-20 px-5 sm:px-8 bg-[#f9fbfb]">
-    <div class="max-w-3xl mx-auto text-center">
-      <div class="relative">
-        <svg class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 text-teal-200/60" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-        </svg>
-        <p class="text-xl md:text-2xl italic text-gray-700 font-medium leading-relaxed px-2">
-          “You are not alone. You are worthy of support. Your feelings are always valid.”
-        </p>
-        <div class="w-16 h-0.5 bg-teal-300 mx-auto mt-6 rounded-full"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION - better visual hierarchy + clickable details, fully responsive -->
-  <section id="contact" class="bg-white py-16 md:py-24 px-5 sm:px-8">
-    <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
-      <p class="text-gray-600 text-base sm:text-lg mb-10 max-w-xl mx-auto">
-        Let’s connect and see if I’m the right fit for your journey. All conversations are confidential and offered with warmth.
-      </p>
-      
-      <div class="flex flex-col md:flex-row gap-6 justify-center items-stretch">
-        <!-- contact card email -->
-        <div class="bg-[#f4f8f8] rounded-2xl shadow-md p-7 flex-1 text-center transition-all hover:shadow-lg border border-gray-100">
-          <div class="text-4xl mb-3">📧</div>
-          <h3 class="font-semibold text-xl text-gray-800">Email me</h3>
-          <a href="mailto:hello@harmonyrises.com" class="text-teal-700 hover:text-teal-900 underline decoration-teal-200 underline-offset-4 transition block mt-2 break-all">
-            hello@harmonyrises.com
-          </a>
-          <p class="text-gray-500 text-sm mt-3">Reply within 24 hours</p>
-        </div>
-        
-        <!-- contact card phone -->
-        <div class="bg-[#f4f8f8] rounded-2xl shadow-md p-7 flex-1 text-center transition-all hover:shadow-lg border border-gray-100">
-          <div class="text-4xl mb-3">📞</div>
-          <h3 class="font-semibold text-xl text-gray-800">Call or text</h3>
-          <a href="tel:+4407700123456" class="text-teal-700 hover:text-teal-900 underline decoration-teal-200 underline-offset-4 transition block mt-2">
-            07700 901234
-          </a>
-          <p class="text-gray-500 text-sm mt-3">Mon–Fri, 9am – 6pm</p>
-        </div>
-        
-        <!-- extra support option -->
-        <div class="bg-[#f4f8f8] rounded-2xl shadow-md p-7 flex-1 text-center transition-all hover:shadow-lg border border-gray-100">
-          <div class="text-4xl mb-3">💬</div>
-          <h3 class="font-semibold text-xl text-gray-800">Video call</h3>
-          <p class="text-gray-700 mt-2">Arrange a free 15-min chat</p>
-          <button onclick="alert('📅 Please email or call to schedule a video session. I’ll respond shortly.')" class="mt-3 text-teal-800 font-medium text-sm bg-white px-4 py-2 rounded-full inline-block shadow-sm hover:bg-teal-50 transition">
-            Request callback
-          </button>
-        </div>
-      </div>
-      
-      <p class="text-sm text-gray-500 mt-10 border-t pt-6 inline-block">
-        📍 Online sessions across the UK | In-person by arrangement
-      </p>
-    </div>
-  </section>
-  
-  <!-- CALL TO ACTION EXTRA (subtle but improves engagement, fully responsive) -->
-  <div class="bg-teal-50/40 py-8 px-5 text-center border-y border-teal-100">
-    <p class="text-gray-700">✨ Taking the first step is brave — I’d be honoured to support you ✨</p>
   </div>
+</section>
 
-  <!-- FOOTER - improved spacing + social placeholder -->
-  <footer class="bg-gray-900 text-gray-300 pt-12 pb-8 px-5">
-    <div class="max-w-7xl mx-auto">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-b border-gray-700 pb-8">
-        <div class="text-center md:text-left">
-          <h3 class="text-white text-xl font-semibold">Harmony Rises Counselling</h3>
-          <p class="text-sm text-gray-400 mt-1">Safe space. Authentic healing.</p>
+    <!-- CONTACT SECTION - better visual hierarchy + clickable details, fully responsive -->
+    <section id="contact" class="bg-white py-16 md:py-24 px-5 sm:px-8">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          Get in Touch
+        </h2>
+
+<div class="text-gray-600 text-base sm:text-lg mb-10 max-w-xl mx-auto leading-relaxed space-y-3">
+  <p>
+    <strong>Counselling in Amble, Northumberland</strong>
+  </p>
+
+  <p>
+    2nd Floor, Fourways 2, Dilston Terrace, Amble, NE65 0DT<br />
+    Mondays & Tuesdays, 9am – 3pm (by appointment)
+  </p>
+
+  <p>
+    Private sessions available:
+    <em>In-person in Amble, online across the UK, or via telephone</em>
+  </p>
+</div>
+        <div
+          class="flex flex-col md:flex-row gap-6 justify-center items-stretch"
+        >
+          <!-- contact card email -->
+          <div
+            class="bg-[#f4f8f8] rounded-2xl shadow-md p-7 flex-1 text-center transition-all hover:shadow-lg border border-gray-100"
+          >
+            <div class="text-4xl mb-3">📧</div>
+            <h3 class="font-semibold text-xl text-gray-800">Email me</h3>
+            <a
+              href="mailto:Harmony.rises.counselling@gmail.com"
+              class="text-teal-700 hover:text-teal-900 underline decoration-teal-200 underline-offset-4 transition block mt-2 break-all"
+            >
+              Harmony.rises.counselling@gmail.com
+            </a>
+            <p class="text-gray-500 text-sm mt-3">Reply within 24 hours</p>
+          </div>
+
+          <!-- contact card phone -->
+          <div
+            class="bg-[#f4f8f8] rounded-2xl shadow-md p-7 flex-1 text-center transition-all hover:shadow-lg border border-gray-100"
+          >
+            <div class="text-4xl mb-3">📞</div>
+            <h3 class="font-semibold text-xl text-gray-800">Call or text</h3>
+            <a
+              href="tel:+4407754617135"
+              class="text-teal-700 hover:text-teal-900 underline decoration-teal-200 underline-offset-4 transition block mt-2"
+            >
+              07754 617135
+            </a>
+            <p class="text-gray-500 text-sm mt-3">Mon & Tues 9am - 3pm</p>
+          </div>
+
+          <!-- extra support option -->
         </div>
-        <div class="flex gap-6 text-sm">
-          <a href="#aim" class="hover:text-teal-300 transition">Approach</a>
-          <a href="#contact" class="hover:text-teal-300 transition">Contact</a>
-          <a href="#" class="hover:text-teal-300 transition">Confidentiality</a>
+        <div class="mt-10">
+          <a
+            href="https://www.instagram.com/harmonyrises"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-teal-500 transition"
+          >
+            <!-- Instagram Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0120 7.75v8.5A3.75 3.75 0 0116.25 20h-8.5A3.75 3.75 0 014 16.25v-8.5A3.75 3.75 0 017.75 4zm8.25 1.5a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"
+              />
+            </svg>
+
+            <span>Find us on Instagram</span>
+          </a>
+        </div>
+        <p class="text-sm text-gray-500 mt-10 border-t pt-6 inline-block">
+📍 Based in Amble, Northumberland | Offering online counselling across the UK
+        </p>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION EXTRA (subtle but improves engagement, fully responsive) -->
+    <div class="bg-teal-50/40 py-8 px-5 text-center border-y border-teal-100">
+      <p class="text-gray-700">
+        ✨ Taking the first step is brave — I’d be honoured to support you ✨
+      </p>
+    </div>
+
+    <!-- FOOTER - improved spacing + social placeholder -->
+    <footer class="bg-gray-900 text-gray-300 pt-12 pb-8 px-5">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-6 border-b border-gray-700 pb-8"
+        >
+          <div class="text-center md:text-left">
+            <h3 class="text-white text-xl font-semibold">
+              Harmony Rises Counselling
+            </h3>
+            <p class="text-sm text-gray-400 mt-1">
+              Safe space. Authentic healing.
+            </p>
+          </div>
+          <div class="flex gap-6 text-sm">
+            <a href="#aim" class="hover:text-teal-300 transition">Approach</a>
+            <a href="#contact" class="hover:text-teal-300 transition"
+              >Contact</a
+            >
+<a href="#" onclick="openModal()" class="hover:text-teal-300 transition">
+  Confidentiality
+</a>
+            <a
+              href="https://www.instagram.com/harmonyrises"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-2 hover:text-pink-400 transition"
+            >
+              <!-- Instagram Icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0120 7.75v8.5A3.75 3.75 0 0116.25 20h-8.5A3.75 3.75 0 014 16.25v-8.5A3.75 3.75 0 017.75 4zm8.25 1.5a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"
+                />
+              </svg>
+
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+        <div class="text-center text-gray-400 text-sm pt-8 space-y-6">
+          <span class="block">
+            © 2026 Harmony Rises Counselling — All rights reserved
+          </span>
+
+          <!-- Accreditation -->
+          <div class="flex flex-col items-center gap-4 pt-4">
+            <img
+              src="images/accph-logo.png"
+              alt="ACCPH Accredited Member"
+              class="h-16 md:h-20 opacity-90 brightness-110 contrast-110 transition"
+            />
+            <span class="text-xs text-gray-500 tracking-wide">
+              Accredited ACCPH Member
+            </span>
+          </div>
         </div>
       </div>
-      <div class="text-center text-gray-400 text-sm pt-8 flex flex-col sm:flex-row justify-between gap-3">
-        <span>© 2026 Harmony Rises Counselling — All rights reserved</span>
-        <span class="hidden sm:inline text-gray-600">|</span>
-        <span>🌿 Registered member of BACP (MBACP)</span>
+    </footer>
+
+    <!-- optional simple back-to-top (nice for responsive UX) -->
+    <button
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      class="fixed bottom-6 right-6 bg-white/90 backdrop-blur-sm text-gray-800 p-2.5 rounded-full shadow-lg hover:bg-teal-50 transition-all z-30 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-400"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2.2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        />
+      </svg>
+      <span class="sr-only">Back to top</span>
+    </button>
+    <a
+      href="deals.html"
+      class="fixed bottom-6 left-6 bg-teal-800 text-white px-5 py-3 rounded-full shadow-lg hover:bg-teal-700 transition-all z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700"
+      aria-label="View Black Friday deals"
+    >
+      Deals
+    </a>
+    <script src="script.js"></script>
+    <div
+      id="blackFridayModal"
+      class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 px-4 py-6"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="blackFridayTitle"
+    >
+      <div class="bg-white max-w-xl w-full rounded-2xl p-4 sm:p-6 relative shadow-2xl max-h-[92vh] overflow-y-auto">
+        <button
+          id="closeBlackFridayModal"
+          type="button"
+          class="absolute top-3 right-3 z-10 bg-white/90 text-gray-700 hover:text-gray-950 rounded-full w-10 h-10 text-2xl shadow"
+          aria-label="Close Black Friday offer"
+        >
+          &times;
+        </button>
+        <h2 id="blackFridayTitle" class="text-xl font-semibold text-gray-900 mb-3 pr-12">
+          Black Friday Special
+        </h2>
+        <button
+          id="enlargeBlackFridayPoster"
+          type="button"
+          class="block w-full text-left rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700"
+          aria-label="Enlarge the Black Friday poster"
+        >
+          <img
+            src="images/blackfriday.jpg"
+            alt="Black Friday Special: The Harmony Rises Transformation Package, an 8-week counselling package for £300, saving £100, available 23–30 November."
+            class="w-full max-h-[68vh] object-contain rounded-xl"
+          />
+          <span class="block text-center text-sm text-teal-800 underline mt-2">Enlarge poster</span>
+        </button>
+        <a href="deals.html" class="block text-center mt-4 bg-teal-800 text-white font-semibold rounded-full px-6 py-3 hover:bg-teal-700 transition">
+          View the offer
+        </a>
       </div>
     </div>
-  </footer>
+    <div
+      id="blackFridayPosterViewer"
+      class="fixed inset-0 bg-black/90 hidden items-center justify-center z-[60] p-4"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Enlarged Black Friday poster"
+    >
+      <button
+        id="closeBlackFridayPoster"
+        type="button"
+        class="absolute top-4 right-4 bg-white/90 text-gray-900 rounded-full w-11 h-11 text-2xl"
+        aria-label="Close enlarged poster"
+      >
+        &times;
+      </button>
+      <img
+        src="images/blackfriday.jpg"
+        alt="Black Friday Special: The Harmony Rises Transformation Package, an 8-week counselling package for £300, saving £100, available 23–30 November."
+        class="max-w-[95vw] max-h-[90vh] object-contain"
+      />
+    </div>
+    <div id="privacyModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 px-4">
+  <div class="bg-white max-w-2xl w-full rounded-2xl p-6 md:p-8 relative shadow-xl max-h-[80vh] overflow-y-auto">
 
-  <!-- optional simple back-to-top (nice for responsive UX) -->
-  <button onclick="window.scrollTo({top:0,behavior:'smooth'})" 
-          class="fixed bottom-6 right-6 bg-white/90 backdrop-blur-sm text-gray-800 p-2.5 rounded-full shadow-lg hover:bg-teal-50 transition-all z-30 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-400">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-    </svg>
-    <span class="sr-only">Back to top</span>
-  </button>
-</body>
+    <!-- Close button -->
+    <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-xl">
+      ✕
+    </button>
+
+    <h2 class="text-2xl font-bold text-gray-900 mb-4">Confidentiality & Privacy</h2>
+
+    <div class="text-gray-600 text-sm space-y-4 leading-relaxed">
+      <p>
+        Your privacy is extremely important. All sessions and communications are treated with strict confidentiality in accordance with professional ethical guidelines.
+      </p>
+
+      <p>
+        Information shared will not be disclosed without your consent, except in rare circumstances where there is a legal or ethical obligation to do so (e.g. risk of harm to yourself or others).
+      </p>
+
+      <p>
+        Any personal data provided via email or contact will be stored securely and used solely for communication regarding counselling services.
+      </p>
+
+      <p>
+        By getting in touch, you consent to being contacted in response to your enquiry.
+      </p>
+
+      <p>
+        If you have any questions about how your data is handled, please feel free to ask.
+      </p>
+    </div>
+
+  </div>
+</div>
+<script>
+  function openModal() {
+    const modal = document.getElementById('privacyModal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('privacyModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  // close when clicking outside
+  document.addEventListener('click', function(e) {
+    const modal = document.getElementById('privacyModal');
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  const blackFridayModal = document.getElementById('blackFridayModal');
+  const blackFridayPosterViewer = document.getElementById('blackFridayPosterViewer');
+  const closeBlackFridayModalButton = document.getElementById('closeBlackFridayModal');
+  const closeBlackFridayPosterButton = document.getElementById('closeBlackFridayPoster');
+
+  function closeBlackFridayOffer() {
+    blackFridayModal.classList.add('hidden');
+    blackFridayModal.classList.remove('flex');
+    blackFridayPosterViewer.classList.add('hidden');
+    blackFridayPosterViewer.classList.remove('flex');
+    document.body.classList.remove('overflow-hidden');
+  }
+
+  function openBlackFridayPoster() {
+    blackFridayPosterViewer.classList.remove('hidden');
+    blackFridayPosterViewer.classList.add('flex');
+    closeBlackFridayPosterButton.focus();
+  }
+
+  closeBlackFridayModalButton.addEventListener('click', closeBlackFridayOffer);
+  closeBlackFridayPosterButton.addEventListener('click', function() {
+    blackFridayPosterViewer.classList.add('hidden');
+    blackFridayPosterViewer.classList.remove('flex');
+    document.getElementById('enlargeBlackFridayPoster').focus();
+  });
+  document.getElementById('enlargeBlackFridayPoster').addEventListener('click', openBlackFridayPoster);
+
+  blackFridayModal.addEventListener('click', function(e) {
+    if (e.target === blackFridayModal) {
+      closeBlackFridayOffer();
+    }
+  });
+  blackFridayPosterViewer.addEventListener('click', function(e) {
+    if (e.target === blackFridayPosterViewer) {
+      blackFridayPosterViewer.classList.add('hidden');
+      blackFridayPosterViewer.classList.remove('flex');
+      document.getElementById('enlargeBlackFridayPoster').focus();
+    }
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      if (!blackFridayPosterViewer.classList.contains('hidden')) {
+        blackFridayPosterViewer.classList.add('hidden');
+        blackFridayPosterViewer.classList.remove('flex');
+        document.getElementById('enlargeBlackFridayPoster').focus();
+      } else if (!blackFridayModal.classList.contains('hidden')) {
+        closeBlackFridayOffer();
+      }
+    }
+  });
+
+  if (!sessionStorage.getItem('blackFridayOfferSeen')) {
+    sessionStorage.setItem('blackFridayOfferSeen', 'true');
+    blackFridayModal.classList.remove('hidden');
+    blackFridayModal.classList.add('flex');
+    document.body.classList.add('overflow-hidden');
+    closeBlackFridayModalButton.focus();
+  }
+</script>
+  </body>
 </html>
